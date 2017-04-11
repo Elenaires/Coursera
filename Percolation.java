@@ -57,10 +57,8 @@ public class Percolation
         
         int row = i - 1;
         int col = j - 1;
-        
-        int thisCell = grid[row][col];
      
-        if (thisCell != OPEN)
+        if (!isOpen(i, j))
         {
             grid[row][col] = OPEN;
         
